@@ -9,52 +9,47 @@
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         .hero { background: #ffffff; padding: 60px 0; border-bottom: 1px solid #eee; }
-        .profile-img { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid #007bff; margin-bottom: 20px; }
-        .project-card { transition: transform 0.3s; border: 1px solid #ddd; height: 100%; }
-        .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .tech-badge { background: #f8f9fa; color: #333; border: 1px solid #ddd; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; margin: 2px; display: inline-block; }
+        .profile-img { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 4px solid #0d6efd; margin-bottom: 20px; background: #eee; }
+        .project-card { transition: transform 0.3s; border: 1px solid #ddd; height: 100%; border-radius: 12px; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+        .tech-badge { background: #e9ecef; color: #495057; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; margin-right: 5px; font-weight: 500; }
+        .btn-primary { border-radius: 8px; font-weight: 600; }
     </style>
 </head>
-<body class="bg-light">
+<body class="bg-light text-dark">
 
     <header class="hero text-center">
         <div class="container">
-            <img src="Personal Photo.jpeg" alt="Abdelrahman Sharafeldin" class="profile-img shadow">
+            <img src="profile.jpg" alt="Abdelrahman Sharafeldin" class="profile-img shadow-lg">
             
-            <h1 class="display-4 fw-bold">Abdelrahman Sharafeldin</h1>
-            <p class="lead text-dark mb-4">AI Automation Expert | End-to-End Workflow & Agent Developer</p>
+            <h1 class="display-4 fw-bold mb-2">Abdelrahman Sharafeldin</h1>
+            <p class="lead mb-4">AI Automation Expert | End-to-End Workflow & Agent Developer</p>
             
             <div class="d-flex justify-content-center gap-4">
-                <a href="mailto:abdelrahmansharafeldin20@gmail.com" title="Email Me" class="text-dark fs-3"><i class="bi bi-envelope-at-fill"></i></a>
-                <a href="www.linkedin.com/in/abdelrahman-sharafeldin-1b1877277" target="_blank" title="LinkedIn" class="text-dark fs-3"><i class="bi bi-linkedin"></i></a>
-                <a href="https://wa.me/201067477640" target="_blank" title="WhatsApp" class="text-dark fs-3"><i class="bi bi-whatsapp"></i></a>
-                <a href="https://t.me/Abdelrahman_Heshamm" target="_blank" title="Telegram" class="text-dark fs-3"><i class="bi bi-telegram"></i></a>
+                <a href="mailto:abdelrahmansharafeldin20@gmail.com" title="Email Me" class="text-primary fs-2"><i class="bi bi-envelope-at-fill"></i></a>
+                <a href="https://www.linkedin.com/in/abdelrahman-sharafeldin-1b1877277" target="_blank" title="LinkedIn" class="text-primary fs-2"><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/201067477640" target="_blank" title="WhatsApp" class="text-primary fs-2"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://t.me/Abdelrahman_Heshamm" target="_blank" title="Telegram" class="text-primary fs-2"><i class="bi bi-telegram"></i></a>
             </div>
         </div>
     </header>
 
-    <section class="container py-5">
-        <div class="row text-center g-4">
+    <section class="container py-5 text-center">
+        <div class="row g-4">
             <div class="col-md-4">
-                <div class="p-3">
-                    <i class="bi bi-briefcase-fill fs-1 text-primary"></i>
-                    <h4 class="mt-3">ROI Focused</h4>
-                    <p class="text-muted small">Systems designed to save human hours and cut operational costs immediately.</p>
-                </div>
+                <i class="bi bi-graph-up-arrow fs-1 text-primary"></i>
+                <h4 class="mt-3 fw-bold">ROI Focused</h4>
+                <p class="text-muted">I transform manual business processes into efficient, cost-saving automated systems.</p>
             </div>
             <div class="col-md-4">
-                <div class="p-3">
-                    <i class="bi bi-robot fs-1 text-primary"></i>
-                    <h4 class="mt-3">AI Native</h4>
-                    <p class="text-muted small">Specializing in multi-LLM agents (Mistral, Gemini, DeepSeek) for logical decision making.</p>
-                </div>
+                <i class="bi bi-robot fs-1 text-primary"></i>
+                <h4 class="mt-3 fw-bold">AI Agent Specialist</h4>
+                <p class="text-muted">Building intelligent agents with Mistral, Gemini, and OpenAI for smart decision-making.</p>
             </div>
             <div class="col-md-4">
-                <div class="p-3">
-                    <i class="bi bi-shield-lock-fill fs-1 text-primary"></i>
-                    <h4 class="mt-3">Scalable Backend</h4>
-                    <p class="text-muted small">Reliable database integration using Neon PostgreSQL for high-volume data handling.</p>
-                </div>
+                <i class="bi bi-database-check fs-1 text-primary"></i>
+                <h4 class="mt-3 fw-bold">Scalable Data</h4>
+                <p class="text-muted">Advanced backend logic and database management using Neon PostgreSQL.</p>
             </div>
         </div>
     </section>
@@ -64,53 +59,53 @@
         <div class="row g-4">
             
             <div class="col-md-6">
-                <div class="card project-card">
+                <div class="card project-card shadow-sm">
                     <div class="card-body">
-                        <h3 class="h5 fw-bold text-primary">1. Smart Sales AI Agent</h3>
-                        <p class="text-muted small">A beverage & sweets shop bot that mimics a sales employee. Uses Neon PostgreSQL, Mistral LLM, and Telegram.</p>
-                        <div class="mb-3">
-                            <span class="tech-badge">n8n</span><span class="tech-badge">Neon DB</span><span class="tech-badge">Mistral AI</span>
+                        <h3 class="h5 fw-bold text-primary mb-3">1. Smart Sales AI Agent</h3>
+                        <p class="small text-secondary">A sales bot for sweets shops that mimics an employee to handle inventory and sales logic via Mistral & Neon DB.</p>
+                        <div class="mb-4">
+                            <span class="tech-badge">n8n</span><span class="tech-badge">PostgreSQL</span><span class="tech-badge">Mistral AI</span>
                         </div>
-                        <a href="PASTE_LINK_TO_SCREENSHOT_FOLDER_1" class="btn btn-sm btn-outline-primary">View Demo & Screenshots →</a>
+                        <a href="https://github.com/Dev-Abdelrahman-Sharafeldin/Dev-Abdelrahman-Sharafeldin.github.io/tree/main/Project1" target="_blank" class="btn btn-primary w-100">View Demo & Screenshots</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <div class="card project-card">
+                <div class="card project-card shadow-sm">
                     <div class="card-body">
-                        <h3 class="h5 fw-bold text-primary">2. 24/7 AI Customer Support</h3>
-                        <p class="text-muted small">Connected AI Agent with Telegram using LLM for automated, intent-based customer query resolution.</p>
-                        <div class="mb-3">
-                            <span class="tech-badge">LLM Agent</span><span class="tech-badge">Telegram Bot</span><span class="tech-badge">n8n</span>
+                        <h3 class="h5 fw-bold text-primary mb-3">2. 24/7 AI Customer Support</h3>
+                        <p class="small text-secondary">Intelligent Telegram agent using LLMs to provide instant, automated customer support with human-like accuracy.</p>
+                        <div class="mb-4">
+                            <span class="tech-badge">AI Agents</span><span class="tech-badge">Telegram</span><span class="tech-badge">n8n</span>
                         </div>
-                        <a href="PASTE_LINK_TO_SCREENSHOT_FOLDER_2" class="btn btn-sm btn-outline-primary">View Demo & Screenshots →</a>
+                        <a href="https://github.com/Dev-Abdelrahman-Sharafeldin/Dev-Abdelrahman-Sharafeldin.github.io/tree/main/Project2" target="_blank" class="btn btn-primary w-100">View Demo & Screenshots</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <div class="card project-card">
+                <div class="card project-card shadow-sm">
                     <div class="card-body">
-                        <h3 class="h5 fw-bold text-primary">3. Automated Document Translation</h3>
-                        <p class="text-muted small">Enterprise workflow that processes PDFs, translates English to Arabic via AI, and delivers via Telegram/Email.</p>
-                        <div class="mb-3">
-                            <span class="tech-badge">AI Translation</span><span class="tech-badge">PDF Processing</span><span class="tech-badge">Automated Delivery</span>
+                        <h3 class="h5 fw-bold text-primary mb-3">3. Automated Document Translation</h3>
+                        <p class="small text-secondary">An automated pipeline that translates business PDFs (English to Arabic) while maintaining original document layout.</p>
+                        <div class="mb-4">
+                            <span class="tech-badge">AI Processing</span><span class="tech-badge">PDF Automation</span>
                         </div>
-                        <a href="PASTE_LINK_TO_SCREENSHOT_FOLDER_3" class="btn btn-sm btn-outline-primary">View Demo & Screenshots →</a>
+                        <a href="https://github.com/Dev-Abdelrahman-Sharafeldin/Dev-Abdelrahman-Sharafeldin.github.io/tree/main/Project3" target="_blank" class="btn btn-primary w-100">View Demo & Screenshots</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <div class="card project-card">
+                <div class="card project-card shadow-sm">
                     <div class="card-body">
-                        <h3 class="h5 fw-bold text-primary">4. Production Downtime Alert System</h3>
-                        <p class="text-muted small">Extracts material IDs from supplier emails to identify and alert management of potential production delays.</p>
-                        <div class="mb-3">
-                            <span class="tech-badge">Email Extraction</span><span class="tech-badge">Logic Nodes</span><span class="tech-badge">Alert System</span>
+                        <h3 class="h5 fw-bold text-primary mb-3">4. Production Downtime Alert</h3>
+                        <p class="small text-secondary">A supply chain monitoring system that analyzes supplier emails to alert management of raw material delays.</p>
+                        <div class="mb-4">
+                            <span class="tech-badge">Logic Nodes</span><span class="tech-badge">Alert System</span>
                         </div>
-                        <a href="PASTE_LINK_TO_SCREENSHOT_FOLDER_4" class="btn btn-sm btn-outline-primary">View Demo & Screenshots →</a>
+                        <a href="https://github.com/Dev-Abdelrahman-Sharafeldin/Dev-Abdelrahman-Sharafeldin.github.io/tree/main/Project4" target="_blank" class="btn btn-primary w-100">View Demo & Screenshots</a>
                     </div>
                 </div>
             </div>
@@ -121,8 +116,8 @@
     <footer class="bg-dark text-white py-5 mt-5">
         <div class="container text-center">
             <h2 class="fw-bold mb-3">Ready to scale your business?</h2>
-            <p class="mb-4">Let's discuss how my AI systems can automate your daily manual work.</p>
-            <a href="https://wa.me/201067477640" class="btn btn-primary btn-lg px-5 shadow">Book a Free 15-Min Consultation</a>
+            <p class="mb-4 text-secondary">Contact me to discuss how AI can automate your manual workflows.</p>
+            <a href="https://wa.me/201067477640" target="_blank" class="btn btn-primary btn-lg px-5">Book a Free 15-Min Consultation</a>
         </div>
     </footer>
 
