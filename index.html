@@ -8,86 +8,121 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .hero { background: #ffffff; padding: 80px 0; border-bottom: 1px solid #eee; }
-        .project-card { transition: transform 0.3s; border: 1px solid #ddd; }
+        .hero { background: #ffffff; padding: 60px 0; border-bottom: 1px solid #eee; }
+        .profile-img { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid #007bff; margin-bottom: 20px; }
+        .project-card { transition: transform 0.3s; border: 1px solid #ddd; height: 100%; }
         .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .btn-ai { background: #007bff; color: white; border-radius: 20px; }
-        .tech-badge { background: #f8f9fa; color: #333; border: 1px solid #ddd; padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; margin: 2px; display: inline-block; }
+        .tech-badge { background: #f8f9fa; color: #333; border: 1px solid #ddd; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; margin: 2px; display: inline-block; }
     </style>
 </head>
 <body class="bg-light">
 
     <header class="hero text-center">
         <div class="container">
-            <h1 class="display-3 fw-bold">Abdelrahman Sharafeldin</h1>
+            <img src="Personal Photo.jpeg" alt="Abdelrahman Sharafeldin" class="profile-img shadow">
+            
+            <h1 class="display-4 fw-bold">Abdelrahman Sharafeldin</h1>
             <p class="lead text-dark mb-4">AI Automation Expert | End-to-End Workflow & Agent Developer</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="mailto:abdelrahmansharafeldin20@gmail.com" class="text-dark fs-4"><i class="bi bi-envelope-fill"></i></a>
-                <a href="https://linkedin.com/in/www.linkedin.com/in/abdelrahman-sharafeldin-1b1877277" target="_blank" class="text-dark fs-4"><i class="bi bi-linkedin"></i></a>
-                <a href="https://wa.me/201067477640" target="_blank" class="text-dark fs-4"><i class="bi bi-whatsapp"></i></a>
-                <a href="https://t.me/Abdelrahman_Heshamm" target="_blank" class="text-dark fs-4"><i class="bi bi-telegram"></i></a>
+            
+            <div class="d-flex justify-content-center gap-4">
+                <a href="mailto:abdelrahmansharafeldin20@gmail.com" title="Email Me" class="text-dark fs-3"><i class="bi bi-envelope-at-fill"></i></a>
+                <a href="www.linkedin.com/in/abdelrahman-sharafeldin-1b1877277" target="_blank" title="LinkedIn" class="text-dark fs-3"><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/201067477640" target="_blank" title="WhatsApp" class="text-dark fs-3"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://t.me/Abdelrahman_Heshamm" target="_blank" title="Telegram" class="text-dark fs-3"><i class="bi bi-telegram"></i></a>
             </div>
         </div>
     </header>
 
     <section class="container py-5">
-        <div class="row text-center">
+        <div class="row text-center g-4">
             <div class="col-md-4">
-                <i class="bi bi-lightning-charge-fill fs-1 text-primary"></i>
-                <h4 class="mt-3">ROI Focused</h4>
-                <p class="text-muted">I build systems that save hours of manual labor and reduce operational costs.</p>
+                <div class="p-3">
+                    <i class="bi bi-briefcase-fill fs-1 text-primary"></i>
+                    <h4 class="mt-3">ROI Focused</h4>
+                    <p class="text-muted small">Systems designed to save human hours and cut operational costs immediately.</p>
+                </div>
             </div>
             <div class="col-md-4">
-                <i class="bi bi-cpu-fill fs-1 text-primary"></i>
-                <h4 class="mt-3">AI Native</h4>
-                <p class="text-muted">Expert in integrating LLMs (Gemini, DeepSeek, Mistral) into real-world business logic.</p>
+                <div class="p-3">
+                    <i class="bi bi-robot fs-1 text-primary"></i>
+                    <h4 class="mt-3">AI Native</h4>
+                    <p class="text-muted small">Specializing in multi-LLM agents (Mistral, Gemini, DeepSeek) for logical decision making.</p>
+                </div>
             </div>
             <div class="col-md-4">
-                <i class="bi bi-database-fill-check fs-1 text-primary"></i>
-                <h4 class="mt-3">Secure Backend</h4>
-                <p class="text-muted">Professional data handling using PostgreSQL and Neon DB for reliable scaling.</p>
+                <div class="p-3">
+                    <i class="bi bi-shield-lock-fill fs-1 text-primary"></i>
+                    <h4 class="mt-3">Scalable Backend</h4>
+                    <p class="text-muted small">Reliable database integration using Neon PostgreSQL for high-volume data handling.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="container py-5" id="portfolio">
-        <h2 class="text-center mb-5 fw-bold">Recent Automations</h2>
+    <section class="container py-5">
+        <h2 class="text-center mb-5 fw-bold">My AI Automation Solutions</h2>
         <div class="row g-4">
             
             <div class="col-md-6">
-                <div class="card h-100 project-card shadow-sm">
+                <div class="card project-card">
                     <div class="card-body">
-                        <h3 class="h5 fw-bold">Smart Sales AI Agent</h3>
-                        <p class="text-muted small">Mimics a sales employee to help customers choose products. Uses n8n + Neon DB + Telegram.</p>
+                        <h3 class="h5 fw-bold text-primary">1. Smart Sales AI Agent</h3>
+                        <p class="text-muted small">A beverage & sweets shop bot that mimics a sales employee. Uses Neon PostgreSQL, Mistral LLM, and Telegram.</p>
                         <div class="mb-3">
-                            <span class="tech-badge">n8n</span><span class="tech-badge">PostgreSQL</span><span class="tech-badge">AI Agents</span>
+                            <span class="tech-badge">n8n</span><span class="tech-badge">Neon DB</span><span class="tech-badge">Mistral AI</span>
                         </div>
-                        <a href="YOUR_IMAGE_OR_VIDEO_LINK_1" class="btn btn-outline-primary btn-sm">View Demo & Screenshots <i class="bi bi-arrow-right-short"></i></a>
+                        <a href="PASTE_LINK_TO_SCREENSHOT_FOLDER_1" class="btn btn-sm btn-outline-primary">View Demo & Screenshots →</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <div class="card h-100 project-card shadow-sm">
+                <div class="card project-card">
                     <div class="card-body">
-                        <h3 class="h5 fw-bold">24/7 Customer Support Bot</h3>
-                        <p class="text-muted small">Automated response system with 99% intent accuracy. Reduces human workload significantly.</p>
+                        <h3 class="h5 fw-bold text-primary">2. 24/7 AI Customer Support</h3>
+                        <p class="text-muted small">Connected AI Agent with Telegram using LLM for automated, intent-based customer query resolution.</p>
                         <div class="mb-3">
-                            <span class="tech-badge">Telegram API</span><span class="tech-badge">LLM</span><span class="tech-badge">n8n</span>
+                            <span class="tech-badge">LLM Agent</span><span class="tech-badge">Telegram Bot</span><span class="tech-badge">n8n</span>
                         </div>
-                        <a href="YOUR_IMAGE_OR_VIDEO_LINK_2" class="btn btn-outline-primary btn-sm">View Demo & Screenshots <i class="bi bi-arrow-right-short"></i></a>
+                        <a href="PASTE_LINK_TO_SCREENSHOT_FOLDER_2" class="btn btn-sm btn-outline-primary">View Demo & Screenshots →</a>
                     </div>
                 </div>
             </div>
 
+            <div class="col-md-6">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold text-primary">3. Automated Document Translation</h3>
+                        <p class="text-muted small">Enterprise workflow that processes PDFs, translates English to Arabic via AI, and delivers via Telegram/Email.</p>
+                        <div class="mb-3">
+                            <span class="tech-badge">AI Translation</span><span class="tech-badge">PDF Processing</span><span class="tech-badge">Automated Delivery</span>
+                        </div>
+                        <a href="PASTE_LINK_TO_SCREENSHOT_FOLDER_3" class="btn btn-sm btn-outline-primary">View Demo & Screenshots →</a>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-md-6">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold text-primary">4. Production Downtime Alert System</h3>
+                        <p class="text-muted small">Extracts material IDs from supplier emails to identify and alert management of potential production delays.</p>
+                        <div class="mb-3">
+                            <span class="tech-badge">Email Extraction</span><span class="tech-badge">Logic Nodes</span><span class="tech-badge">Alert System</span>
+                        </div>
+                        <a href="PASTE_LINK_TO_SCREENSHOT_FOLDER_4" class="btn btn-sm btn-outline-primary">View Demo & Screenshots →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <footer class="bg-dark text-white py-5 mt-5">
         <div class="container text-center">
-            <h2 class="fw-bold">Ready to scale your business?</h2>
-            <p>Let's discuss how AI can automate your routine tasks.</p>
-            <a href="https://wa.me/201067477640" class="btn btn-primary btn-lg mt-3 px-5">Book a Free 15-Min Consultation</a>
+            <h2 class="fw-bold mb-3">Ready to scale your business?</h2>
+            <p class="mb-4">Let's discuss how my AI systems can automate your daily manual work.</p>
+            <a href="https://wa.me/201067477640" class="btn btn-primary btn-lg px-5 shadow">Book a Free 15-Min Consultation</a>
         </div>
     </footer>
 
